@@ -1,19 +1,22 @@
 import React from 'react';
-
-import {
-  SafeAreaView,
-  Text,
-  View,
-} from 'react-native';
+import {SafeAreaView} from 'react-native';
+import Greeting from './components/Greeting';
+import Box from './components/Box';
 
 const App = () => {
 
+  const name = '차영빈';
+
   return (
     <SafeAreaView>
-      <View className="bg-black h-10 w-10">
-        <Text className="text-3xl font-bold underline"> Hello hi</Text>
-      </View>
+        <Greeting name={name} />
+        <Box />
     </SafeAreaView> 
   );
 };
+
+// Greeting.defaultProps = {
+//   name: "차영빈",
+// }
+
 export default App;
