@@ -9,8 +9,8 @@ const App = () => {
 
   return (
     <SafeAreaView>
-        <Greeting name={name} />
-        <Box />
+        {/* <Greeting name={name} /> */}
+        <Box rounded size="large" color="blue" />
     </SafeAreaView> 
   );
 };
